@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,6 @@
     <link href="./output.css" rel="stylesheet" />
     <link href="./font.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./styles/general.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/general.css" /> -->
-
     <title>Portfolio</title>
   </head>
   <body>
@@ -46,7 +44,9 @@
         id="banner"
         class="min-h-[90vh] justify-center flex py-10 md:px-0 px-4"
       >
-        <div class="container flex flex-col md:flex-row gap-10 my-auto">
+        <div
+          class="container flex flex-col md:flex-row gap-10 jus my-auto justify-center"
+        >
           <div class="order-2 md:order-1 max-w-xl">
             <h1
               class="font-bold text-2xl text-center md:text-start md:text-4xl"
@@ -70,6 +70,7 @@
                 src="./image/icons/stek-icon/Orion_github.svg"
                 class="w-8 h-8"
                 alt=""
+                `
               />
               <img
                 src="./image/icons/stek-icon/html-5-logo-svgrepo-com 1.svg"
@@ -77,7 +78,7 @@
                 alt=""
               />
               <img
-                src="./image/icons/stek-icon/Tailwind_CSS_Logo 1.svg"
+                src="./image/icons/stek-icon/CSS3_logo_and_wordmark 1.svg"
                 class="w-8 h-8"
                 alt=""
               />
@@ -104,10 +105,10 @@
               />
             </div>
           </div>
-          <div class="mx-auto items-center flex order-1 md:order-2">
+          <div class="flex order-1 md:order-2">
             <div>
               <div
-                class="max-w-[300px] min-w-[250px] h-[300px] border-2 border-black rounded-lg justify-center items-center"
+                class="max-w-[300px] min-w-[250px] h-[300px] border-2 border-black rounded-lg justify-center items-center overflow-hidden"
               >
                 <img
                   class="w-auto h-full object-cover"
@@ -124,6 +125,7 @@
           </div>
         </div>
       </section>
+      <div>Если вы видите этот текст значит portfolio еще в разработке</div>
       <section
         id="projects"
         class="max-h-[2100px] bg-main justify-center flex py-[86px] md:px-0 px-5"
@@ -131,10 +133,42 @@
         <div class="container justify-center">
           <h2 class="font-bold text-6xl text-white">Проекты</h2>
           <!--  -->
-          <div class="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-3">
-            <a href="https://ludvigborn.github.io/">
+
+          <div
+            class="mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 justify-items-center"
+          >
+            <a href="https://ludvigborn.github.io/food/">
               <div
-                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] mx-auto ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl"
+                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl"
+              >
+                <h3 class="font-bold text-2xl">Cервис доставки еды</h3>
+                <p class="line-clamp-4 mt-4 text-sm">
+                  В этом проекты главной задачей было добавить интерактивность
+                  на сайте. В проекте были созданы: модальные окно, слайдер,
+                  калькулятор ккал, форма.
+                </p>
+                <div class="flex gap-2 text-base mt-4">
+                  <div
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
+                  >
+                    css
+                  </div>
+                  <div
+                    class="border-2 border-black bg-yellow-300 py-1.5 px-7 text-black rounded-md text-xs"
+                  >
+                    java-script
+                  </div>
+                </div>
+                <div
+                  class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
+                  style="background-image: url(&quot;./image/food.png&quot;)"
+                ></div>
+              </div>
+            </a>
+            <!--  -->
+            <a href="#">
+              <div
+                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl"
               >
                 <h3 class="font-bold text-2xl">Cross-zero</h3>
                 <p class="line-clamp-3 mt-4 text-sm">
@@ -155,11 +189,38 @@
                 </div>
                 <div
                   class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
-                  style="background-image: url('./image/images.jpeg')"
+                  style="background-image: url(&quot;./image/images.jpeg&quot;)"
                 ></div>
               </div>
             </a>
             <!--  -->
+            <a href="#">
+              <div
+                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl"
+              >
+                <h3 class="font-bold text-2xl">Cross-zero</h3>
+                <p class="line-clamp-3 mt-4 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="flex gap-2 text-base mt-4">
+                  <div
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
+                  >
+                    react
+                  </div>
+                  <div
+                    class="border-2 border-black bg-yellow-300 py-1.5 px-7 text-black rounded-md text-xs"
+                  >
+                    tailwildcss
+                  </div>
+                </div>
+                <div
+                  class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
+                  style="background-image: url(&quot;./image/images.jpeg&quot;)"
+                ></div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
