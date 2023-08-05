@@ -11,3 +11,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+#useStack::-webkit-scrollbar {
+  display: none;
+}

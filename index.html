@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,28 +15,33 @@
         class="h-[10vh] bg-main border-b-2 border-black items-center justify-center gap-40 flex"
       >
         <div class="container items-center flex">
-          <nav class="mx-auto h-full">
+          <!-- <nav class="mx-auto h-full">
             <ul class="flex gap-24 text-white text-lg transition-all h-max">
               <a href="#projects"><li>Проекты</li></a>
               <li>Обо мне</li>
             </ul>
-          </nav>
-          <div class="text-white gap-7 md:flex hidden">
-            <img
-              class="h-7 w-7"
-              src="./image/icons/society-icon/whatsapp-svgrepo-com.svg"
-              alt=""
-            />
-            <img
-              class="h-7 w-7"
-              src="./image/icons/society-icon/email-svgrepo-com-2.svg"
-              alt=""
-            />
-            <img
-              class="h-7 w-7"
-              src="./image/icons/society-icon/Orion_github.svg"
-              alt=""
-            />
+          </nav> -->
+          <div class="text-white gap-7 flex ml-auto">
+            <div class="flex gap-2 items-center">
+              <img
+                class="h-5 w-5"
+                src="./image/icons/society-icon/whatsapp-svgrepo-com.svg"
+                alt=""
+              />
+              <div>+7 (771) 592 46 68</div>
+            </div>
+
+            <a
+              href="https://github.com/LudvigBorn"
+              class="flex gap-2 items-center"
+            >
+              <img
+                class="h-5 w-5"
+                src="./image/icons/society-icon/Orion_github.svg"
+                alt=""
+              />
+              <div>LudvigBorn</div>
+            </a>
           </div>
         </div>
       </header>
@@ -105,7 +110,7 @@
               />
             </div>
           </div>
-          <div class="flex order-1 md:order-2">
+          <div class="flex order-1 md:order-2 justify-center">
             <div>
               <div
                 class="max-w-[300px] min-w-[250px] h-[300px] border-2 border-black rounded-lg justify-center items-center overflow-hidden"
@@ -117,7 +122,8 @@
                 />
               </div>
               <button
-                class="border-2 border-black bg-main w-full py-2 text-white mt-2 rounded-md text-base"
+                id="downloadButton"
+                class="border-2 border-black bg-yellow-300 w-full py-2 text-black mt-2 rounded-md text-base"
               >
                 Скачать резюме
               </button>
@@ -130,7 +136,7 @@
       </div>
       <section
         id="projects"
-        class="max-h-[2100px] bg-main justify-center flex py-[86px] md:px-0 px-5"
+        class="bg-main justify-center flex py-[86px] md:px-0 px-5 border-2 border-black min-h-[100vh]"
       >
         <div class="container justify-center">
           <h2 class="font-bold text-6xl text-white">Проекты</h2>
@@ -155,14 +161,14 @@
                     css
                   </div>
                   <div
-                    class="border-2 border-black bg-yellow-300 py-1.5 px-7 text-black rounded-md text-xs"
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
                     java-script
                   </div>
                 </div>
                 <div
                   class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
-                  style="background-image: url(&quot;./image/food.png&quot;)"
+                  style="background-image: url('./image/food.png')"
                 ></div>
               </div>
             </a>
@@ -178,59 +184,80 @@
                 </p>
                 <div class="flex gap-2 text-base mt-4">
                   <div
-                    class="border-2 border-black bg-pink-600 py-1.5 px-7 text-white rounded-md text-xs"
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
                     scss
                   </div>
                   <div
-                    class="border-2 border-black bg-orange-500 py-1.5 px-7 text-white rounded-md text-xs"
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
                     html
                   </div>
                   <div
-                    class="border-2 border-black bg-yellow-300 py-1.5 px-7 text-black rounded-md text-xs"
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
                     java-script
                   </div>
                 </div>
                 <div
                   class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
-                  style="background-image: url(&quot;./image/uber.png&quot;)"
+                  style="background-image: url('./image/uber.png')"
                 ></div>
               </div>
             </a>
             <!--  -->
-            <a href="https://ludvigborn.github.io/marvel/">
+            <!-- <a
+              href="https://ludvigborn.github.io/marvel-app/"
+              class=""
+            > -->
+            <a href="https://ludvigborn.github.io/marvel-app/">
               <div
-                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl h-[432px]"
+                class="py-7 px-7 bg-white border-2 border-black rounded-2xl max-w-[400px] ease-out duration-300 transition-all hover:scale-105 hover:shadow-2xl h-full"
               >
-                <h3 class="font-bold text-2xl">Гайд Marvel heroes</h3>
-                <p class="mt-4 text-sm line-clamp-3">
-                  В этом проекты главной задачей было создать сайт используя
-                  react. В этом проектк был использован роутинг, хуки.
+                <h3 class="font-bold text-2xl">Справочник Marvel</h3>
+                <p class="line-clamp-4 mt-4 text-sm">
+                  В этом проекты главной задачей было создать верстку сайта и
+                  адаптировать ее на все устройства.
                 </p>
-                <div class="flex gap-2 text-base mt-4">
+                <div
+                  id="useStack"
+                  class="flex gap-2 text-base mt-4 overflow-auto"
+                >
+                  <div
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
+                  >
+                    scss
+                  </div>
                   <div
                     class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
                     react
                   </div>
                   <div
-                    class="border-2 border-black bg-yellow-300 py-1.5 px-7 text-black rounded-md text-xs"
+                    class="border-2 border-black bg-main py-1.5 px-7 text-white rounded-md text-xs"
                   >
-                    tailwildcss
+                    redux
                   </div>
                 </div>
                 <div
                   class="h-[200px] overflow-hidden rounded-md border-2 border-black mt-4 bg-cover bg-center"
-                  style="background-image: url(&quot;./image/images.jpeg&quot;)"
+                  style="background-image: url('./image/marvel-app.png')"
                 ></div>
               </div>
             </a>
+
+            <!-- </a> -->
           </div>
         </div>
       </section>
-      <section
+      <!-- <section id="aboutMe" class="pt-24 pb-72 bg-white justify-center flex">
+        <div class="container">
+          <h1 class="font-bold text-2xl text-center md:text-start md:text-4xl">
+            Обо мне
+          </h1>
+        </div>
+      </section> -->
+      <!-- <section
         id="footer"
         class="h-24 bg-main border-b-2 border-black items-center flex justify-center gap-40"
       >
@@ -251,12 +278,22 @@
             alt=""
           />
         </div>
-      </section>
-      <section id="aboutMe" class="min-h-920px"></section>
+      </section> -->
+    </div>
+    <div
+      id="btnUp"
+      class="fixed bottom-10 right-10 bg-yellow-300 border-2 border-black h-16 w-16 rounded-md flex justify-center items-center cursor-pointer"
+    >
+      <img
+        src="./image/icons/society-icon/arrow.svg"
+        class="h-10 w-10"
+        alt=""
+      />
     </div>
   </body>
-  <script
+  <!-- <script
     src="https://kit.fontawesome.com/2c6040a7fe.js"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
+  <script src="./js/script.js"></script>
 </html>
